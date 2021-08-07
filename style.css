@@ -1,0 +1,242 @@
+body{
+padding: 0;
+margin: 0;
+background-color: hsl(233, 47%, 7%);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar h3{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    margin-left: 35px;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.navbar li{
+    margin-right: 50px;
+}
+
+.navbar p{
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.firstPage{
+    /* display: none;    */
+}           /* We have to change here */
+
+.topSec{
+    text-align: center;
+    padding-top: 40px;
+    background-image: url("images/body.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin: 0 20px 0 20px;
+}
+
+.topSec h1{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.topSec p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.secondSec{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 2rem;
+    padding-top: 30px;
+    height: 300px;
+    margin: 0 20px 0 20px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.thirdSec{
+    position: relative;
+    top: 2rem;
+    margin: 0 20px 0 20px;
+    height: 200px;
+    background-color: hsl(244, 38%, 16%);
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+
+.thirdSec p{
+    font-size: 20px;
+    font-weight: 200;
+    padding:0 15px 10px 15px;
+    color: white;
+}
+
+.thirdSec button{
+    height: 3.5em;
+    width: 17rem;
+    color: white;
+    font-size: 17px;
+    background: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px grey;
+    cursor: pointer;
+}
+
+footer{
+    background-color: white;
+    height: 3rem;
+}
+
+
+/* This part is For Login Information */
+
+.loginCard{
+    margin: auto;
+    height: 27.9rem;
+    width: 24rem;
+    margin-top: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 5px grey;
+    display: none;
+}        /* We have to change here */
+
+.loginCard h2{
+    color: grey;
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+
+.loginCard h4{
+    color: white;
+    font-size: 1.2rem;
+    margin-left:1.5rem;
+}
+
+.loginInput{
+    width:16rem;
+    height: 2.3rem;
+    margin-left:1.5rem;
+    padding-left: .5rem;
+    background: none;
+    outline: none;
+    color: white;
+    box-shadow: 1px -1px 1px greenyellow;
+    border-bottom: 1px solid greenyellow;
+}
+
+/* .loginButton{
+    margin: 20px 0 0 55px;
+    height:2.5rem;
+    width: 65%;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: none;
+} */
+
+/* .aCard{
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 18px;
+}
+
+.aCard a{
+    color: white;
+} */
+
+
+/* This part is for sign up information*/
+
+.signupCard{
+    margin: auto;
+    height: 37rem;
+    width: 27rem;
+    margin-top: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 5px grey;
+    display: none;
+}        /* We have to change here */
+
+.signupCard h2{
+    color: grey;
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+
+.signupCard h4{
+    color: white;
+    font-size: 1.2rem;
+    margin-left:1.5rem;
+}
+
+.signupInput{
+    width:16rem;
+    height: 2.3rem;
+    margin-left:1.5rem;
+    padding-left: .5rem;
+    background: none;
+    outline: none;
+    color: white;
+    box-shadow: 1px -1px 1px greenyellow;
+    border-bottom: 1px solid greenyellow;
+}
+
+.checkboxDiv{
+    margin: 20px 0 10px 20px;
+}
+
+.checkbox{
+    height: 15px;
+    width: 18px;
+    background: grey;
+    cursor: pointer;
+}
+
+.signupCard label{
+    color: white;
+    font-size: 15px;
+}
+
+.loginButton{
+    margin: 20px 0 0 55px;
+    height:2.5rem;
+    width: 65%;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: none;
+}
+
+.aCard{
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 18px;
+}
+
+.aCard a{
+    color: white;
+}
+

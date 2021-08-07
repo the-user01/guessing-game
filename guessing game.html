@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="game.js"></script> -->
+    <script src="adding.js"></script>
+
+</head>
+<body>
+    
+    <header>        
+        <nav class="navbar"> 
+            <div>
+            <h3>Guessing Game</h3>
+        </div>    <!-- First div Ends here-->
+
+            <div> 
+            <ul>
+                <li><p  id="signUpLink" onclick="signUpButton()">Sign up</p></li>
+
+                <li><p onclick=" playBtn()" id="loginLink">Sign in</p></li>
+            </ul>
+        </div>     <!-- Second div Ends here-->
+
+        </nav>
+    </header>     <!-- Header tag Ends here-->
+
+    <main id="firstPage" class="firstPage">
+
+    <section class="topSec">         
+        <div>
+            <h1>Let's take a peek into your memory</h1>
+            <p>Show us your talent using your amazing guess. </p>
+           </div>
+    </section>     <!-- Top Section Ends here-->
+
+    <section class="secondSec">     
+    <div>        
+    <a href="#" target="_blank"> <img src="images/game.png" alt=""> </a>
+    </div>     <!-- First image div Ends here -->
+ 
+    <div>       
+    <a href="#" target="_blank"><img src="images/champ.png" alt=""></a>
+    </div>     <!-- second Image div Ends here-->
+
+    </section>     <!-- Second Section Ends here--> <br>
+
+    <section class="thirdSec"> 
+        <p>This game will help you to spend leisure time. What are you waiting for? Let's play it together.</p> 
+        
+        <button onclick="playBtn()" id="playBtn">Click Here to play the Game</button>
+
+    </section>      <!-- Third Section Ends here--> <br> <br> <br>
+
+    <footer></footer>
+
+</main>     <!-- First page main ENDS here -->
+
+    <main id="signIn" class="loginCard">
+        <div
+        ><h2>Login/Sign up</h2>
+        </div>
+
+        <div
+        ><h4>Enter username or Email address</h4>
+        </div>
+        <div>
+             <input type="text" name="text" class="loginInput" placeholder="Enter username or Email address">
+             </div>
+
+        <div>
+            <h4>Enter your password</h4>
+        </div>
+        <div> 
+            <input type="password" name="pass" class="loginInput" placeholder="Enter your password">
+         </div>
+
+        <div>
+            <button onclick="loginButton()" id="loginBtn" class="loginButton" >Login</button>
+        </div>
+
+        <div>
+            <button onclick="signUpButton()" id="signUpBtn" class="loginButton">Sign Up</button>
+        </div>
+
+        <div class="aCard">
+            <a href="https://www.youtube.com/watch?v=ZZvKjEV0N6k" target="_blank">Forgot Password?</a>
+        </div>
+
+    </main>   <!-- Login Card main ENDS here -->
+
+
+    <main id="signUp" class="signupCard">
+        <div>
+            <h2>Sign up</h2>
+        </div>
+
+        <div>
+            <h4>Enter username</h4>
+        </div>
+        <div> 
+            <input type="text" name="text" class="signupInput" placeholder="Enter username or Email address"> 
+        </div>
+
+        <div>
+            <h4>Enter Email address</h4>
+        </div>
+        <div> 
+            <input type="email" name="text" class="signupInput" placeholder="Enter Email address"> 
+        </div>
+
+        <div>
+            <h4>Enter your password</h4>
+        </div>
+        <div> 
+            <input type="password" name="pass" class="loginInput" placeholder="Enter your password"> 
+        </div>
+
+        <div class="checkboxDiv">
+            <input type="checkbox" class="checkbox">
+            <label for="agreement">I agree to the applicable rules set out in the User Agreement, Privacy Policy, Cookie Use Policy, Game License Agreement, and GameCenter License Agreement.</label>
+        </div>
+
+        <div>
+            <button onclick="confirmation()" class="loginButton">Sign Up</button>
+        </div>
+
+        <div class="aCard">
+            <a href="https://www.youtube.com/watch?v=ZZvKjEV0N6k" target="_black">Terms and Conditions</a>
+        </div>
+
+    </main>   <!-- Sign Up Card main ENDS here -->
+
+
+</body>
+</html>
+
+
+
+<!--
+
+    1. Add Some INFO at the bottom/footer section (such as: Game INFO, Contact, Patent)
+
+    2. Make header sections Sign In/Sign up button work.
+    
+    3. Make the game button work (After clicking the button Sign in / Sign up page will pop-up)
+
+    4. After filling all the blanks it will take to the either Sign in page or take to the Gaming page.
+
+    5. Make those images work (Game pic will take to Motivational youtube channel. Champ page will show leader board. )
+
+ -->
