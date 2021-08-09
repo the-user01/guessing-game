@@ -3,8 +3,9 @@
 <head>
     <title>Guessing Game</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="game.js"></script> -->
+    
     <script src="adding.js"></script>
+    <script src="game.js"></script>
 
 </head>
 <body>
@@ -53,33 +54,35 @@
 
     </section>      <!-- Third Section Ends here--> <br> <br> <br>
 
-    <footer></footer>
+    <footer>Copyright©2021, This property belongs to Sakib Hasan</footer>
 
 </main>     <!-- First page main ENDS here -->
 
     <main id="signIn" class="loginCard">
-        <div
-        ><h2>Login/Sign up</h2>
-        </div>
 
+        <div>
+        <h2>Login/Sign up</h2>
+        </div>
+       
         <div
         ><h4>Enter username or Email address</h4>
         </div>
+       
         <div>
-             <input type="text" name="text" class="loginInput" placeholder="Enter username or Email address">
+             <input id="inputField" type="text" name="text" class="loginInput" placeholder="Enter username or Email address" required>
              </div>
-
+            
         <div>
             <h4>Enter your password</h4>
         </div>
         <div> 
-            <input type="password" name="pass" class="loginInput" placeholder="Enter your password">
+            <input type="password" name="pass" class="loginInput" placeholder="Enter your password" required>
          </div>
-
+        
         <div>
-            <button onclick="loginButton()" id="loginBtn" class="loginButton" >Login</button>
+            <button type="submit" onclick="loginButton()" id="loginBtn" class="loginButton" type="login" >Login</button>
         </div>
-
+   
         <div>
             <button onclick="signUpButton()" id="signUpBtn" class="loginButton">Sign Up</button>
         </div>
@@ -92,6 +95,7 @@
 
 
     <main id="signUp" class="signupCard">
+        <form action="">
         <div>
             <h2>Sign up</h2>
         </div>
@@ -100,39 +104,82 @@
             <h4>Enter username</h4>
         </div>
         <div> 
-            <input type="text" name="text" class="signupInput" placeholder="Enter username or Email address"> 
+            <input type="text" name="text" class="signupInput" placeholder="Enter username" required> 
         </div>
 
         <div>
             <h4>Enter Email address</h4>
         </div>
         <div> 
-            <input type="email" name="text" class="signupInput" placeholder="Enter Email address"> 
+            <input type="email" name="text" class="signupInput" placeholder="Enter Email address" required> 
         </div>
 
         <div>
             <h4>Enter your password</h4>
         </div>
         <div> 
-            <input type="password" name="pass" class="loginInput" placeholder="Enter your password"> 
+            <input type="password" name="pass" class="loginInput" placeholder="Enter your password" required> 
         </div>
 
         <div class="checkboxDiv">
-            <input type="checkbox" class="checkbox">
+            <input type="checkbox" class="checkbox" required>
             <label for="agreement">I agree to the applicable rules set out in the User Agreement, Privacy Policy, Cookie Use Policy, Game License Agreement, and GameCenter License Agreement.</label>
         </div>
 
         <div>
-            <button onclick="confirmation()" class="loginButton">Sign Up</button>
+            <button type="submit" onclick="confirmation()" class="loginButton">Sign Up</button>
         </div>
 
         <div class="aCard">
             <a href="https://www.youtube.com/watch?v=ZZvKjEV0N6k" target="_black">Terms and Conditions</a>
         </div>
-
+    </form>
     </main>   <!-- Sign Up Card main ENDS here -->
 
+    <!-- Gaming Part Starts from here Thank me later -->
 
+    <main class="gamingMain" id="gamingSection">
+
+        <section>
+            <div>
+              <h2>Enter  your guessing number from (1-10)</h2>
+            </div>
+
+            <div class="takerInput">
+                <div>
+                    <input type="number" name="number" id="numberTaker" placeholder="Enter your number" class="numberTaker">
+                </div>
+                <div>
+                    <button type="submit" class="submitButton" onclick="submissionButton()">Submit</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <form action="" class="formClass">
+
+                <fieldset class="legendTag">
+                <legend id="legendTag"> </legend>
+                <p class="numberPublisher" id="numberPublishing"></p>
+
+            </fieldset>
+
+            </form>
+        </section>
+
+        <section>
+            <div class="scoreDiv">
+                <h3 id="scoreText"> </h3>
+            </div>
+
+            <div>
+                <button onclick="refreshBtn()" class="refreshButton">Refresh</button>
+
+            </div>
+
+        </section>
+
+    </main>
 </body>
 </html>
 
@@ -151,3 +198,16 @@
     5. Make those images work (Game pic will take to Motivational youtube channel. Champ page will show leader board. )
 
  -->
+
+
+ <!-- 
+    1. Make a Input field for taking random number from user.
+    2. Make another input field using "legend" to Show message "Bad Luck" / "Great".
+    3. in the second input field show the matched Random number "Matched" / "Didn't Match"
+    4. "Correct Number will be Green"
+    5. "Incorrect number will be Red"
+    6. Show How many times User Won / Lose.
+  -->
+
+
+             <!-- Best Of Luck -->

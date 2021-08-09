@@ -5,6 +5,9 @@
  // After Clicking "#signIn" This will Enter to Game page
  // Clicking Sign up button will take to "#signUp" page
 
+ // If the input fields are empty Show a message "Stupid"
+ // Use If else
+
  var firstPage = document.getElementById("firstPage");
  var signInPage = document.getElementById("signIn");
  var signUpPage = document.getElementById("signUp");
@@ -28,11 +31,17 @@ function playBtn() {
 function loginButton() {
     var signInPage = document.getElementById("signIn");
     signInPage.style.display = "none";
+
+    var gamingPage = document.getElementById("gamingSection");
+    gamingPage.style.display = "block"
 }
 
  /* Sign up button */
 
  function signUpButton() {
+    var firstPage = document.getElementById("firstPage");
+     firstPage.style.display = "none"
+     
     var signInPage = document.getElementById("signIn");
     signInPage.style.display = "none";
 
@@ -46,7 +55,6 @@ function loginButton() {
 
     var signInPage = document.getElementById("signIn");
     signInPage.style.display = "block";
-
  }
 
 

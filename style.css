@@ -31,9 +31,11 @@ background-color: hsl(233, 47%, 7%);
     cursor: pointer;
 }
 
-.firstPage{
-    /* display: none;    */
-}           /* We have to change here */
+/* .firstPage{
+    display: none;   
+}           */
+
+ /* We have to change here */
 
 .topSec{
     text-align: center;
@@ -101,7 +103,10 @@ background-color: hsl(233, 47%, 7%);
 
 footer{
     background-color: white;
-    height: 3rem;
+    height: 2rem;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 13px;
 }
 
 
@@ -141,29 +146,6 @@ footer{
     box-shadow: 1px -1px 1px greenyellow;
     border-bottom: 1px solid greenyellow;
 }
-
-/* .loginButton{
-    margin: 20px 0 0 55px;
-    height:2.5rem;
-    width: 65%;
-    color: white;
-    font-size: 1rem;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background: none;
-} */
-
-/* .aCard{
-    margin-top: 3vh;
-    text-align: center;
-    font-size: 18px;
-}
-
-.aCard a{
-    color: white;
-} */
-
 
 /* This part is for sign up information*/
 
@@ -221,7 +203,7 @@ footer{
 .loginButton{
     margin: 20px 0 0 55px;
     height:2.5rem;
-    width: 65%;
+    width: 15rem;
     color: white;
     font-size: 1rem;
     outline: none;
@@ -240,3 +222,99 @@ footer{
     color: white;
 }
 
+
+/* Gaming page CSS starts from here */
+
+
+.gamingMain{
+    text-align: center;
+    color: white;
+    display: none;                            
+}            /* Need to change here  */             
+
+.takerInput{
+    display: flex;
+    justify-content: center;
+}
+
+.numberTaker{
+    height: 3rem;
+    width: 17rem;
+    border: none;
+    background: none;
+    color: white;
+    padding-left: 1.5rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    box-shadow: 2px -2px 2px white;
+    border-bottom: 2px solid white;
+    margin:1rem 2rem 3rem 2.5rem;
+}
+
+.submitButton{
+    position: relative;
+    top: 1.2rem;
+    height: 2.5rem;
+    width: 8rem;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border:2px solid white;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.submitButton:hover{
+    box-shadow: 3px 3px 5px grey;
+}
+
+.formClass{
+    margin-left: 33rem;
+    margin-bottom: 2rem;
+}
+
+.legendTag{
+    margin-top: 20px;
+    width: 17rem;
+    font-size: 25px;
+}
+
+.numberPublisher{
+    height: 3rem;
+    width: 15rem;
+    padding-left: 1rem;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.scoreDiv h3{
+    height: 4rem;
+    width: 18rem;
+    margin-top: 4rem;
+    margin-left: 34rem;
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    text-align: center;
+    border:2px solid white;
+}
+
+.refreshButton{
+    height: 2.5rem;
+    width: 8rem;
+    margin: 2rem 0 5rem 1.5rem;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border:2px solid white;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.refreshButton:hover{
+    box-shadow: 2px 2px 5px grey;
+}
