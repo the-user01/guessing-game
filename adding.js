@@ -8,13 +8,10 @@
  // If the input fields are empty Show a message "Stupid"
  // Use If else
 
- var firstPage = document.getElementById("firstPage");
- var signInPage = document.getElementById("signIn");
- var signUpPage = document.getElementById("signUp");
- var loginBtn = document.getElementById("loginBtn");
- var signUpBtn = document.getElementById("signUpBtn")
- const signInLink = document.getElementById("loginLink");
- const signUpLink = document.getElementById("signUpLink");
+
+
+
+
 
  /* This function is for play button */
 
@@ -28,13 +25,29 @@ function playBtn() {
 
 
 /* Login Button */
-function loginButton() {
-    var signInPage = document.getElementById("signIn");
-    signInPage.style.display = "none";
 
-    var gamingPage = document.getElementById("gamingSection");
-    gamingPage.style.display = "block"
-}
+
+function loginButton() {
+    var inputField = document.getElementById("inputField").value;
+    var passField = document.getElementById("passField").value;
+
+        if(inputField == "" || passField == ""){
+            alert("Fill up the form first");
+
+        }else{
+
+            var signInPage = document.getElementById("signIn");
+            signInPage.style.display = "none";
+
+            var gamingPage = document.getElementById("gamingSection");
+            gamingPage.style.display = "block"
+        }
+
+}  /* Function bracket  */
+
+
+
+
 
  /* Sign up button */
 
@@ -49,12 +62,24 @@ function loginButton() {
     signUpPage.style.display = "block";
  }
 
+
+
  function confirmation() {
+
+    var firstPage = document.getElementById("firstPage");
+    firstPage.style.display = "none"
+  
     var signUpPage = document.getElementById("signUp");
     signUpPage.style.display = "none";
 
     var signInPage = document.getElementById("signIn");
     signInPage.style.display = "block";
+     
  }
 
 
+    // var signUpPage = document.getElementById("signUp");
+    // signUpPage.style.display = "none";
+
+    // var signInPage = document.getElementById("signIn");
+    // signInPage.style.display = "block";

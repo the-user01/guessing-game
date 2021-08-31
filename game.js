@@ -21,7 +21,7 @@
             
             if ( guessedNumber < 0 || guessedNumber > 10) {
 
-                alert("Enter between number 1-10 ")
+                alert("Enter between number 0-10 ")
 
             } else{
 
